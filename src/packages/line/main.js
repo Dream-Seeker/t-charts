@@ -10,8 +10,11 @@ function getLineXAxis (args) {
     nameGap: 22,
     boundaryGap: false,
     name: xAxisName[index] || '',
-    axisTick: { show: true, lineStyle: { color: '#eee' } },
+    axisTick: { show: true, lineStyle: { color: '#eee' }, length: 7 },
     data: rows.map(row => row[item]),
+    axisLabel: { // custome
+      margin: 15
+    },
     show: axisVisible
   }))
 }
@@ -89,7 +92,17 @@ function getLineYAxis (args) {
     axisTick: {
       show: false
     },
-    show: axisVisible
+    show: axisVisible,
+    axisLine: { // custome
+      lineStyle: {
+        color: '#80848F'
+      }
+    },
+    splitLine: { // custome
+      lineStyle: {
+        color: '#E9EAEC'
+      }
+    }
   }
   let yAxis = []
   for (let i = 0; i < 2; i++) {
@@ -153,7 +166,12 @@ function getLegend (args) {
     data,
     formatter (name) {
       return legendName[name] != null ? legendName[name] : name
-    }
+    },
+    icon: 'roundRect', // custome
+    itemHeight: 5, // custome
+    itemWidth: 18, // custome
+    itemGap: 18, // custome
+    right: '3.4%' // custome
   }
 }
 

@@ -3,6 +3,22 @@ import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/legend'
 
 echarts.registerTheme('ve-chart', {
+  categoryAxis: {
+    axisLine: { show: false },
+    axisTick: { show: false },
+    splitLine: { show: false }
+  },
+  valueAxis: {
+    axisLine: { show: false }
+  },
+  line: {
+    smooth: true
+  },
+  grid: {
+    containLabel: true,
+    left: 10,
+    right: 10
+  },
   'seriesCnt': '3',
   'backgroundColor': 'rgba(0, 0, 0, 0)',
   'titleColor': '#495060',
