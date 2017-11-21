@@ -3,7 +3,8 @@ import { getFormated, getStackMap } from '../../utils'
 import 'echarts/lib/chart/line'
 
 function getLineXAxis (args) {
-  const { dimension, rows, xAxisName, axisVisible, xAxisType } = args
+  const { dimension, rows, xAxisName, xAxisType } = args
+  // const { dimension, rows, xAxisName, axisVisible, xAxisType } = args
   return dimension.map((item, index) => ({
     type: xAxisType,
     nameLocation: 'middle',
@@ -13,9 +14,10 @@ function getLineXAxis (args) {
     axisTick: { show: true, lineStyle: { color: '#eee' }, length: 7 },
     data: rows.map(row => row[item]),
     axisLabel: { // custome
-      margin: 15
+      margin: 15,
+      color: '#80848F'
     },
-    show: axisVisible
+    show: true
   }))
 }
 
