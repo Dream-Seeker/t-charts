@@ -14,8 +14,15 @@ echarts.registerTheme('ve-chart', {
     },
     axisLabel: {
       show: true,
+      margin: 15,
       textStyle: {
         color: '#80848F'
+      }
+    },
+    splitLine: {
+      show: true,
+      lineStyle: {
+        color: '#E9EAEC'
       }
     }
   },

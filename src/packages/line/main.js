@@ -3,21 +3,26 @@ import { getFormated, getStackMap } from '../../utils'
 import 'echarts/lib/chart/line'
 
 function getLineXAxis (args) {
-  const { dimension, rows, xAxisName, xAxisType } = args
-  // const { dimension, rows, xAxisName, axisVisible, xAxisType } = args
+  const { dimension, rows, xAxisName, axisVisible, xAxisType } = args
   return dimension.map((item, index) => ({
     type: xAxisType,
     nameLocation: 'middle',
     nameGap: 22,
     boundaryGap: false,
     name: xAxisName[index] || '',
-    axisTick: { show: true, lineStyle: { color: '#eee' }, length: 7 },
-    data: rows.map(row => row[item]),
-    axisLabel: { // custome
+    axisTick: {
+      show: true,
+      lineStyle: {
+        color: '#eee'
+      },
+      length: 7
+    },
+    axisLabel: {
       margin: 15,
       color: '#80848F'
     },
-    show: true
+    data: rows.map(row => row[item]),
+    show: axisVisible
   }))
 }
 
@@ -94,17 +99,7 @@ function getLineYAxis (args) {
     axisTick: {
       show: false
     },
-    show: axisVisible,
-    axisLine: { // custome
-      lineStyle: {
-        color: '#80848F'
-      }
-    },
-    splitLine: { // custome
-      lineStyle: {
-        color: '#E9EAEC'
-      }
-    }
+    show: axisVisible
   }
   let yAxis = []
   for (let i = 0; i < 2; i++) {
