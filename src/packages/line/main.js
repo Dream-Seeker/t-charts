@@ -10,11 +10,18 @@ function getLineXAxis (args) {
     nameGap: 22,
     boundaryGap: false,
     name: xAxisName[index] || '',
-    axisTick: { show: true, lineStyle: { color: '#eee' }, length: 7 },
-    data: rows.map(row => row[item]),
-    axisLabel: { // custome
-      margin: 15
+    axisTick: {
+      show: true,
+      lineStyle: {
+        color: '#eee'
+      },
+      length: 7
     },
+    axisLabel: {
+      margin: 15,
+      color: '#80848F'
+    },
+    data: rows.map(row => row[item]),
     show: axisVisible
   }))
 }
@@ -92,17 +99,7 @@ function getLineYAxis (args) {
     axisTick: {
       show: false
     },
-    show: axisVisible,
-    axisLine: { // custome
-      lineStyle: {
-        color: '#80848F'
-      }
-    },
-    splitLine: { // custome
-      lineStyle: {
-        color: '#E9EAEC'
-      }
-    }
+    show: axisVisible
   }
   let yAxis = []
   for (let i = 0; i < 2; i++) {
