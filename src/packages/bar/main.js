@@ -17,9 +17,22 @@ function getBarDimAxis (args) {
       ? getValueAxisData(dims)
       : innerRows.map(row => row[item]),
     axisLabel: {
+      margin: 16,
       formatter (v) {
         return String(v)
       }
+    },
+    axisLine: {
+      show: false
+    },
+    boundaryGap: true,
+    axisTick: {
+      show: true,
+      length: 8,
+      lineStyle: {
+        color: '#E9EAEC'
+      },
+      alignWithLabel: 'true'
     },
     show: axisVisible
   }))
@@ -50,6 +63,9 @@ function getBarMeaAxis (args) {
     axisTick: {
       show: false
     },
+    axisLine: {
+      show: false
+    },
     show: axisVisible
   }
   let meaAxis = []
@@ -58,6 +74,7 @@ function getBarMeaAxis (args) {
     if (meaAxisType[i]) {
       meaAxis[i] = Object.assign({}, meaAxisBase, {
         axisLabel: {
+          margin: 16,
           formatter (val) {
             return getFormated(val, meaAxisType[i], digit)
           }
@@ -191,6 +208,10 @@ function getLegend (args) {
     : metrics
   return {
     data,
+    right: '5.5%',
+    itemWidth: 12,
+    itemHeight: 12,
+    itemGap: 18,
     formatter (name) {
       return legendName[name] != null ? legendName[name] : name
     }
