@@ -4,9 +4,17 @@ import 'echarts/lib/chart/radar'
 
 function getRadarLegend (rows, dimension, legendName) {
   let legendData = rows.map(row => row[dimension])
-
+  legendData = legendData.map(each => {
+    return {
+      'name': each,
+      'icon': 'emptyCircle'
+    }
+  })
   return {
     data: legendData,
+    orient: 'vertical',
+    right: '5%',
+    top: '10%',
     formatter (name) {
       return legendName[name] != null ? legendName[name] : name
     }
@@ -37,7 +45,7 @@ function getRadarTooltip (dataType, radar, digit) {
 function getRadarSetting (rows, metrics, labelMap) {
   const settingBase = {
     indicator: [],
-    shape: 'circle',
+    // shape: 'circle',
     splitNumber: 5
   }
   let indicatorTemp = {}
