@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62d82c69-3053-43a9-b3a1-bf26faa8c0f6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/data/pie.js" afterPath="$PROJECT_DIR$/examples/data/pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/data/ring.js" afterPath="$PROJECT_DIR$/examples/data/ring.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/packages/pie/main.js" afterPath="$PROJECT_DIR$/src/packages/pie/main.js" />
-    </list>
+    <list default="true" id="62d82c69-3053-43a9-b3a1-bf26faa8c0f6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -292,12 +287,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511167072728</updated>
-      <workItem from="1511167074344" duration="21979000" />
+      <workItem from="1511167074344" duration="22049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21979000" />
+    <option name="totallyTimeSpent" value="22049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
