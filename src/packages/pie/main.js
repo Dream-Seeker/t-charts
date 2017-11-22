@@ -21,6 +21,7 @@ function getPieSeries (args) {
     digit,
     roseType,
     label,
+    // 多圆饼图
     level,
     limitShowNum,
     isRing,
@@ -48,12 +49,22 @@ function getPieSeries (args) {
   } else {
     rowsTemp.push(innerRows)
   }
+  // TODO
   let seriesBase = {
     type: 'pie',
     selectedMode,
     hoverAnimation,
     roseType,
-    center: ['50%', offsetY]
+    center: ['50%', offsetY],
+    label: {
+      normal: {
+        show: false,
+        position: 'center'
+      }
+    }
+    // tooltip: {
+    //   position: ['80%', '50%']
+    // }
   }
   let rowsTempLength = rowsTemp.length
   rowsTemp.forEach((dataRows, index) => {
@@ -129,6 +140,10 @@ function getPieLegend (args) {
     return {
       data: legend,
       show: legend.length < legendLimit,
+      // 更改legend布局
+      orient: 'vertical',
+      left: '70%',
+      top: 'middle',
       formatter (name) {
         return legendName[name] != null ? legendName[name] : name
       }
@@ -242,6 +257,7 @@ export const pie = (columns, rows, settings, extra, isRing) => {
     metrics,
     dimension
   })
+  // const title = getPieTitle()
   const options = { series, legend, tooltip }
   return options
 }
