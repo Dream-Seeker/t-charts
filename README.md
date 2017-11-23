@@ -14,13 +14,13 @@
 
 ### 文档
 
-[https://elemefe.github.io/v-charts/](https://elemefe.github.io/v-charts/#/)
+[https://talkingdata.github.io/view-charts/](https://talkingdata.github.io/view-charts/#/)
 
 ### 安装
 ---
 
 ```
-npm i v-charts -S
+npm i view-charts -S
 ```
 
 ### 快速上手
@@ -34,7 +34,7 @@ npm i v-charts -S
 </template>
 
 <script>
-import VeLine from 'v-charts/lib/line'
+import VeLine from 'view-charts/lib/line'
 export default {
   created () {
     this.chartData = {
