@@ -1,5 +1,5 @@
 {
-  "name": "view-charts",
+  "name": "t-charts",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:TalkingData/view-charts.git"
+    "url": "git+git@github.com:TalkingData/t-charts.git"
   },
   "keywords": [
     "vue",
     "echarts"
   ],
-  "author": "xiguaxigua|view-charts team",
+  "author": "xiguaxigua|t-charts team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TalkingData/view-charts/issues"
+    "url": "https://github.com/TalkingData/t-charts/issues"
   },
-  "homepage": "https://github.com/TalkingData/view-charts#readme",
+  "homepage": "https://github.com/TalkingData/t-charts#readme",
   "dependencies": {
     "echarts": "^3.8.3"
   },

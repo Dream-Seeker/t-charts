@@ -3,7 +3,7 @@
 #### npm安装
 
 ```
-npm i view-charts -S
+npm i t-charts -S
 ```
 
 #### cdn
