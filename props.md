@@ -1,6 +1,6 @@
-### view-charts属性
+### t-charts属性
 
-##### view-charts 的属性分为两种，一种是全部图表都具有的属性，例如 `colors`, `grid` 等
+##### t-charts 的属性分为两种，一种是全部图表都具有的属性，例如 `colors`, `grid` 等
 
 `<ve-line :data="chartData" :colors="chartColors" :grid="chartGrid"></ve-line>`
 
@@ -37,7 +37,7 @@
 | judge-width | 是否处理生成图表时的宽度问题 |  Boolean | 默认为 true |
 | width-change-delay | 容器宽度变化的延迟 | Number | 默认为300 |
 
-> 备注：使用loading和dataEmpty属性前需引入css `import 'view-charts/lib/style.css'`
+> 备注：使用loading和dataEmpty属性前需引入css `import 't-charts/lib/style.css'`
 
 同时，为了能够更方便的设置属性配置项等，可以通过`extend`属性实现对已配置好的内部属性进行单独的设置，`extend`为对象类型，对象内的属性可以是函数，也可以对象，也可以是其他类型的值
  - 当属性为函数时，设置的是函数的返回值
