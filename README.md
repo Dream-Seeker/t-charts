@@ -8,8 +8,8 @@
 ![License](https://img.shields.io/badge/license-MIT-000000.svg)
 [![Join the chat at https://gitter.im/ElemeFE/v-charts](https://badges.gitter.im/ElemeFE/v-charts.svg)](https://gitter.im/ElemeFE/v-charts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-在使用echarts生成图表时，经常需要做繁琐的数据类型转化、修改复杂的配置项，v-charts的出现正是为了解决这个
-痛点。基于Vue2.0和echarts封装的v-charts图表组件，只需要统一提供一种对前后端都友好的数据格式
+在使用echarts生成图表时，经常需要做繁琐的数据类型转化、修改复杂的配置项，view-charts的出现正是为了解决这个
+痛点。基于Vue2.0和echarts封装的view-charts图表组件，只需要统一提供一种对前后端都友好的数据格式
 设置简单的配置项，便可轻松生成常见的图表。
 
 ### 文档

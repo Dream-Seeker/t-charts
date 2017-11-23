@@ -1,6 +1,6 @@
 ### 百度地图
 
-为了使在echarts上更简单的使用百度地图，v-charts封装了一个百度地图的‘壳子’，在settings中添加
+为了使在echarts上更简单的使用百度地图，view-charts封装了一个百度地图的‘壳子’，在settings中添加
 关于图表的配置（key,bmap），在组件上直接设置 series, tooltip 等，便可生成以百度地图为坐标系
 的 Echarts 图表。
 
