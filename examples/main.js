@@ -1,10 +1,12 @@
 import App from './App'
 import Vue from 'vue'
 import router from './router'
+import iView from 'iview'
+import CodeSection from './components/code-section'
+import 'iview/dist/styles//iview.css'
 import 'normalize.css'
 
-import CodeSection from './components/code-section'
-
+Vue.use(iView)
 Vue.component(CodeSection.name, CodeSection)
 
 /* eslint-disable no-new */

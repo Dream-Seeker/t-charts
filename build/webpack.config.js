@@ -58,6 +58,14 @@ module.exports = {
         }
       },
       {
+        test: /\.(woff2|woff|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'fonts/[name].[hash:7].[ext]'
+        }
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('./src'), resolve('./examples')]
