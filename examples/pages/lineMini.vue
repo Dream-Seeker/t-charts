@@ -7,10 +7,10 @@
         <p><span class="t-font">{{changeNum}}</span><span>{{changePer}}</span></p>
         <p style="height: 46px">
           <line-mini  :data="chartData"
-                    :settings="chartSettings"
-                    width="100%"
-                    height="46px"
-                    style="position: absolute;left: -38px;right: 20px">
+                      :settings="chartSettings"
+                      width="100%"
+                      height="46px"
+                      style="position: absolute;left: -38px;right: 20px">
           </line-mini>
         </p>
       </div>

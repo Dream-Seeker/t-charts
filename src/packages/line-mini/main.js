@@ -68,6 +68,9 @@ function getLineSeries (args) {
     let seriesItem = {
       name: labelMap[item] != null ? labelMap[item] : item,
       type: 'line',
+      // 改变symbol
+      showSymbol: false,
+      symbolSize: 1,
       data: dataTemp[item]
     }
 
@@ -177,7 +180,7 @@ function getLegend (args) {
   }
 }
 
-export const line = (columns, rows, settings, extra) => {
+export const linemini = (columns, rows, settings, extra) => {
   const {
     axisSite = {},
     yAxisType = ['normal', 'normal'],
