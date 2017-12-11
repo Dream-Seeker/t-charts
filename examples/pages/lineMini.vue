@@ -6,12 +6,12 @@
         <p>新增玩家</p>
         <p><span class="t-font">{{changeNum}}</span><span>{{changePer}}</span></p>
         <p style="height: 46px">
-          <ve-line  :data="chartData"
+          <line-mini  :data="chartData"
                     :settings="chartSettings"
                     width="100%"
                     height="46px"
                     style="position: absolute;left: -38px;right: 20px">
-          </ve-line>
+          </line-mini>
         </p>
       </div>
     </Card>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import VeLine from '../../src/packages/line'
+  import LineMini from '../../src/packages/line-mini'
   export default {
     props: {},
     created: function () {
@@ -47,7 +47,7 @@
         typeList: []
       }
     },
-    components: { VeLine },
+    components: { LineMini },
     computed: {},
     methods: {}
   }
