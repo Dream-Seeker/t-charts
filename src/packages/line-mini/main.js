@@ -139,6 +139,10 @@ function getLineTooltip (args) {
     : rightItems
   return {
     trigger: 'axis',
+    // 空字符，图例标线
+    axisPointer: {
+      type: 'none'
+    },
     formatter (items) {
       let tpl = []
       tpl.push(`${items[0].name}<br>`)

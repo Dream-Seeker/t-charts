@@ -15,11 +15,26 @@
         </p>
       </div>
     </Card>
+    <Card :bordered="false"
+          style="width: 270px;height: 156px">
+      <div class="t-content">
+        <p>新增玩家</p>
+        <p style="height: 46px">
+          <histogram-mini   :data="barData"
+                            :settings="barSettings"
+                            width="100%"
+                            height="60px">
+          </histogram-mini>
+        </p>
+      </div>
+    </Card>
   </div>
 </template>
 
 <script>
   import LineMini from '../../src/packages/line-mini'
+  import barMini from '../../src/packages/bar-mini'
+  import histogramMini from '../../src/packages/histogram-mini'
   export default {
     props: {},
     created: function () {
@@ -38,6 +53,20 @@
         stack: { '售价': ['成本', '利润'] },
         area: true
       }
+      this.barData = {
+        columns: ['日期', '余额', '年龄'],
+        rows: [
+          { '日期': '1-1', '余额': 12, '年龄': 3 },
+          { '日期': '1-2', '余额': 12, '年龄': 6 },
+          { '日期': '1-3', '余额': 21, '年龄': 9 },
+          { '日期': '1-4', '余额': 41, '年龄': 12 },
+          { '日期': '1-5', '余额': 31, '年龄': 15 },
+          { '日期': '1-6', '余额': 71, '年龄': 20 }
+        ]
+      }
+      this.barSettings = {
+        stack: { '对比': ['余额', '年龄'] }
+      }
     },
     data () {
       return {
@@ -47,7 +76,7 @@
         typeList: []
       }
     },
-    components: { LineMini },
+    components: { LineMini, barMini, histogramMini },
     computed: {},
     methods: {}
   }

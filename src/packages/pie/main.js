@@ -142,7 +142,7 @@ function getPieLegend (args) {
       show: legend.length < legendLimit,
       // 更改legend布局
       orient: 'vertical',
-      left: '70%',
+      right: '30%',
       top: 'middle',
       formatter (name) {
         return legendName[name] != null ? legendName[name] : name
