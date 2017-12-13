@@ -16,6 +16,6 @@ export default new Router({
     { path: '/eventer', name: '事件监听', component: Eventer },
     { path: '/toggle', name: '图表切换', component: Toggle },
     { path: '/test', name: '测试', component: Test },
-    { path: '/bmap', name: '百度地图', component: Bmap },
+    { path: '/bmap', name: '百度地图', component: Bmap }
   ]
 })

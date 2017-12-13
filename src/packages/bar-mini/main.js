@@ -7,7 +7,7 @@ import get from 'lodash-es/get'
 const VALUE_AXIS_OPACITY = 0.5
 
 function getBarDimAxis (args) {
-  const { innerRows, dimAxisName, dimension, axisVisible, dimAxisType, dims } = args
+  const { innerRows, dimAxisName, dimension, dimAxisType, dims } = args
   return dimension.map(item => ({
     type: 'category',
     name: dimAxisName,
@@ -54,7 +54,6 @@ function getBarMeaAxis (args) {
     meaAxisName,
     meaAxisType,
     // TODO
-    axisVisible,
     digit,
     scale,
     min,
