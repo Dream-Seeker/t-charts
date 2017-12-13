@@ -6,7 +6,6 @@ import Eventer from './pages/eventer'
 import Toggle from './pages/toggle'
 import Test from './pages/test'
 import Bmap from './pages/bmap.vue'
-import LineMini from './pages/lineMini.vue'
 
 Vue.use(Router)
 
@@ -18,6 +17,5 @@ export default new Router({
     { path: '/toggle', name: '图表切换', component: Toggle },
     { path: '/test', name: '测试', component: Test },
     { path: '/bmap', name: '百度地图', component: Bmap },
-    { path: '/linemini', name: 'line-mini', component: LineMini }
   ]
 })

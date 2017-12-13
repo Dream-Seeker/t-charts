@@ -169,7 +169,6 @@ function getLegend (args) {
     itemWidth: 18, // custome
     itemGap: 18, // custome
     right: '3.4%', // custome
-    show: false
   }
 }
 
@@ -181,7 +180,7 @@ export const line = (columns, rows, settings, extra) => {
     yAxisName = [],
     dimension = [columns[0]],
     xAxisName = [],
-    axisVisible = false,
+    axisVisible = true,
     area,
     stack,
     scale = [false, false],
