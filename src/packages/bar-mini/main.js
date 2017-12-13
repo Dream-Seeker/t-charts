@@ -34,7 +34,8 @@ function getBarDimAxis (args) {
       },
       alignWithLabel: 'true'
     },
-    show: axisVisible
+    // 控制显示
+    show: false
   }))
 }
 
@@ -52,6 +53,7 @@ function getBarMeaAxis (args) {
   const {
     meaAxisName,
     meaAxisType,
+    // TODO
     axisVisible,
     digit,
     scale,
@@ -66,7 +68,7 @@ function getBarMeaAxis (args) {
     axisLine: {
       show: false
     },
-    show: axisVisible
+    show: false
   }
   let meaAxis = []
 
@@ -104,6 +106,10 @@ function getBarTooltip (args) {
   }
   return {
     trigger: 'axis',
+    // 空字符，图例标线
+    axisPointer: {
+      type: 'none'
+    },
     formatter (items) {
       let tpl = []
       tpl.push(`${items[0].name}<br>`)
@@ -209,9 +215,10 @@ function getLegend (args) {
   return {
     data,
     right: '5.5%',
-    itemWidth: 12,
+    itemWidth: 10,
     itemHeight: 12,
     itemGap: 18,
+    show: false,
     formatter (name) {
       return legendName[name] != null ? legendName[name] : name
     }
@@ -228,7 +235,7 @@ export const barmini = (columns, rows, settings, extra) => {
     axisSite = {},
     dimension = [columns[0]],
     stack = {},
-    axisVisible = true,
+    axisVisible = false,
     digit = 2,
     dataOrder = false,
     scale = [false, false],
