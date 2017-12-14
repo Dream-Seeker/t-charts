@@ -30,29 +30,6 @@ pkgTypeList.forEach(({ type, min, suffix }) => {
   })
 })
 
-// for unpkg.com
-Object.keys(componentInfo).forEach(name => {
-  const { src } = componentInfo[name]
-  pkg.push({
-    unpkg: true,
-    src,
-    min: true,
-    type: 'umd',
-    suffix: '.min.js',
-    globalName: name,
-    dist: `umd/${name}`
-  })
-  pkg.push({
-    unpkg: true,
-    src,
-    min: false,
-    type: 'umd',
-    suffix: '.js',
-    globalName: name,
-    dist: `umd/${name}`
-  })
-})
-
 const addons = [
   {
     min: false,
