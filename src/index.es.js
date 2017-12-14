@@ -1,6 +1,9 @@
 import VeBar from './packages/bar'
+import VeBarMini from './packages/bar-mini'
 import VeHistogram from './packages/histogram'
+import VeHistogramMini from './packages/histogram-mini'
 import VeLine from './packages/line'
+import VeLineMini from './packages/line-mini'
 import VePie from './packages/pie'
 import VeRing from './packages/ring'
 import VeWaterfall from './packages/waterfall'
@@ -14,8 +17,11 @@ import VeHeatmap from './packages/heatmap'
 
 const components = [
   VeBar,
+  VeBarMini,
   VeHistogram,
+  VeHistogramMini,
   VeLine,
+  VeLineMini,
   VePie,
   VeRing,
   VeWaterfall,

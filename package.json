@@ -1,11 +1,11 @@
 {
   "name": "t-charts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.config.js",
-    "build": "rm -f -r lib && node build/rollup.config.js && cp -f lib/index.min.js lib/style.min.css docs/",
+    "build": "rm -f -r lib && rm -f -r umd && node build/rollup.config.js && cp -f lib/index.min.js lib/style.min.css docs/ && cp -f lib/index.min.js lib/style.min.css umd/",
     "prepublish": "npm run build",
     "test": "karma start ./test/karma.conf.js",
     "docs": "docsify serve docs",
@@ -32,6 +32,10 @@
     "iview": "^2.7.3",
     "url-loader": "^0.5.8"
   },
+  "files": [
+    "lib",
+    "umd"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "babel-core": "6.24.0",
