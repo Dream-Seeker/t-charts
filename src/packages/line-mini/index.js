@@ -2,7 +2,7 @@ import echarts from '../../echarts-base'
 import { linemini } from './main'
 import Core from '../../core'
 export default {
-  name: 'LineMini',
+  name: 'VeLineMini',
   mixins: [Core],
   created () {
     this.chartHandler = linemini

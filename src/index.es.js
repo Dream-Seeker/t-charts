@@ -42,9 +42,12 @@ function install (Vue, _) {
 
 export {
   VeBar,
+  VeBarMini,
   VeHistogram,
+  VeHistogramMini,
   VeRing,
   VeLine,
+  VeLineMini,
   VePie,
   VeWaterfall,
   VeFunnel,

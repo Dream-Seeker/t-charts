@@ -3,7 +3,7 @@ import { barmini } from './main'
 import Core from '../../core'
 
 export default {
-  name: 'BarMini',
+  name: 'VeBarMini',
   mixins: [Core],
   created () {
     this.chartHandler = barmini

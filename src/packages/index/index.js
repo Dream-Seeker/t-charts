@@ -1,6 +1,9 @@
 import VeBar from '../bar'
+import VeBarMini from '../bar-mini'
 import VeHistogram from '../histogram'
+import VeHistogramMini from '../histogram-mini'
 import VeLine from '../line'
+import VeLineMini from '../line-mini'
 import VePie from '../pie'
 import VeRing from '../ring'
 import VeWaterfall from '../waterfall'
@@ -20,8 +23,11 @@ import 'echarts/lib/chart/radar'
 
 const components = [
   VeBar,
+  VeBarMini,
   VeHistogram,
+  VeHistogramMini,
   VeLine,
+  VeLineMini,
   VePie,
   VeRing,
   VeWaterfall,
