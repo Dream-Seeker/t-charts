@@ -184,6 +184,18 @@ function getLegend (args) {
   }
 }
 
+function getGrid () {
+  return {
+    show: false,
+    left: '0%',
+    right: '10%',
+    top: '0%',
+    bottom: '0%',
+    containLabel: false,
+    padding: 0
+  }
+}
+
 export const linemini = (columns, rows, settings, extra) => {
   const {
     axisSite = {},
@@ -259,8 +271,9 @@ export const linemini = (columns, rows, settings, extra) => {
     xAxisType,
     dimension
   })
+  const grid = getGrid()
   if (!xAxis || !series) return false
 
-  let options = { legend, xAxis, series, yAxis, tooltip }
+  let options = { legend, xAxis, series, yAxis, tooltip, grid }
   return options
 }

@@ -224,6 +224,18 @@ function getLegend (args) {
   }
 }
 
+function getGrid () {
+  return {
+    show: false,
+    left: '0%',
+    right: '10%',
+    top: '0%',
+    bottom: '0%',
+    containLabel: false,
+    padding: 0
+  }
+}
+
 function getDims (rows, dimension) {
   return rows.map(row => row[dimension[0]])
 }
@@ -409,8 +421,9 @@ export const histogrammini = (columns, rows, settings, status) => {
     opacity,
     dims
   })
+  const grid = getGrid()
   const tooltipParams = { axisSite, isHistogram, meaAxisType, digit, labelMap }
   const tooltip = tooltipVisible && getBarTooltip(tooltipParams)
-  const options = { legend, yAxis, series, xAxis, tooltip }
+  const options = { legend, yAxis, series, xAxis, tooltip, grid }
   return options
 }
